@@ -1,6 +1,7 @@
 # Library Management System
 
 ## Table of Contents
+
 - [Introduction](#introduction)
 - [Requirements](#requirements)
   - [Entities and Relationships](#entities-and-relationships)
@@ -13,6 +14,7 @@
 - [License](#license)
 
 ## Introduction
+
 The Library Management System is designed to manage the books, members, and transactions within a library. It facilitates book management, member management, and the borrowing/returning process, ensuring a seamless experience for both librarians and members.
 
 ## Requirements
@@ -20,6 +22,7 @@ The Library Management System is designed to manage the books, members, and tran
 ### Entities and Relationships
 
 1. **Book**
+
    - **Attributes:**
      - Title
      - Author
@@ -32,6 +35,7 @@ The Library Management System is designed to manage the books, members, and tran
      - `removeCopy()`: Decreases the number of copies available.
 
 2. **Member**
+
    - **Attributes:**
      - Member ID
      - Name
@@ -55,19 +59,23 @@ The Library Management System is designed to manage the books, members, and tran
      - `viewBooks()`: Displays all books in the library.
 
 ### Functional Requirements
+
 - **Book Management:**
+
   - Add new books to the system.
   - Remove books from the system.
   - Update book details (title, author, etc.).
   - Search for books by title, author, or genre.
 
 - **Member Management:**
+
   - Register new members.
   - Update member details (contact information, membership type).
   - View member details.
   - List all borrowed books for a member.
 
 - **Borrowing and Returning Books:**
+
   - Members can borrow books if available.
   - Limit on the number of books a member can borrow.
   - Record the borrowing transaction (date borrowed, due date).
@@ -79,6 +87,7 @@ The Library Management System is designed to manage the books, members, and tran
   - Summary of books available by genre.
 
 ### Non-Functional Requirements
+
 - **User Interface:** The system should have a simple and user-friendly interface for both members and librarians.
 - **Security:** Authentication for members and librarians to access their respective features.
 - **Performance:** The system should handle multiple concurrent users without significant delays.
@@ -86,14 +95,8 @@ The Library Management System is designed to manage the books, members, and tran
 - **Data Persistence:** Books and member data should be stored in a database or file system to persist across sessions.
 
 ### Additional Features (Optional)
+
 - **Reservation System:** Members can reserve books that are currently checked out.
 - **Membership Renewal:** Members can renew their memberships through the system.
 - **Notifications:** Automated reminders for due dates and overdue books.
 - **Search History:** Track books searched by members.
-
-## Getting Started
-To get a copy of this project up and running on your local machine for development and testing purposes, follow these simple steps:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/library-management-system.git
