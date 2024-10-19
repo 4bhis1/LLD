@@ -7,8 +7,6 @@ class Spreadsheet {
         this.cells = new Array(this.row).fill(new Array(this.col).fill(new Cell()));
     }
 
-
-
     getCell(row, col) {
         return this.cells[row][col];
     }

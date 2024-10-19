@@ -3,12 +3,14 @@ class Cell {
     #setType(value) {
         if (!value) {
             this.type = void 0
-        } else if (value.startsWith("=")) {
-            this.type = "formula";
         } else if (typeof value === "number") {
             this.type = "number";
         } else {
-            this.type = "string";
+            if (value.startsWith("=")) {
+                this.type = "formula";
+            } else {
+                this.type = "string";
+            }
         }
     }
 
@@ -21,7 +23,7 @@ class Cell {
         return this.value;
     }
 
-    set editValue(value) {
+    editValue(value) {
         this.value = value
         this.#setType(value)
     }
